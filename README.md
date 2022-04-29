@@ -15,6 +15,8 @@ Check out the original demo on the godot asset library: https://godotengine.org/
  GoDot does not support TLS 1.3 (for example to connect to infura) so these are some workarounds (whilst not secure) to get you developing until then. 
  There are other options to check for root certificates, but suffers similar issues on security as anyone can create a certificate with an issuer.
  
+Another option is to trust the root certificate as provided as an example by @rohanrhu Evrensel Kişilik https://github.com/Nethereum/Nethereum/issues/811#issuecomment-1112141236
+ 
 To work with normal Nethereum on your main script add the following
 
 ```csharp
