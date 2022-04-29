@@ -1,0 +1,14 @@
+﻿<Project Sdk="Godot.NET.Sdk/3.3.0">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <RootNamespace>Pong</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="CertUtility\**" />
+    <EmbeddedResource Remove="CertUtility\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nethereum.Web3" Version="4.4.1" />
+  </ItemGroup>
+</Project>
