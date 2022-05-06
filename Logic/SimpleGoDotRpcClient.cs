@@ -41,7 +41,7 @@ public class SimpleGoDotRpcClient : ClientBase
         }
         string[] headers = new[] { "Content-Type: application/json" };
   
-        err = http.Request(HTTPClient.Method.Post, "/" ,headers, rpcRequestJson ); // Request a page from the site.
+        err = http.Request(HTTPClient.Method.Post, _baseUrl.PathAndQuery, headers, rpcRequestJson); // Request a page from the site.
 
         // Keep polling for as long as the request is being processed.
         while (http.GetStatus() == HTTPClient.Status.Requesting)
